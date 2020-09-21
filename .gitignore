@@ -1,0 +1,26 @@
+bin/
+
+# Netbeans
+/nbproject
+
+# eclipse
+.settings/*
+.classpath
+.project
+
+# Maven
+
+target/*
+
+# Mac files
+/.DS_Store
+
+# Intellij
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# Vim
+*.swp
+src/test/java/com/ecec/rweber/icinga/Test.java
