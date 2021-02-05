@@ -14,6 +14,7 @@ public class IcingaQuery {
 	public static final String CONTACT_ENDPOINT	= "v1/objects/users";
 	public static final String HOST_ENDPOINT = "v1/objects/hosts";
 	public static final String SERVICE_ENDPOINT = "v1/objects/services";
+	public static final String DOWNTIME_ENDPOINT = "v1/objects/downtimes";
 	
 	private String m_endpoint = null;
 	private ColumnList m_attrs = null;
