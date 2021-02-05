@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 
+## 0.2.7
+
+### Added
+
+- added the ability to query Downtime objects using the /v1/objects/downtimes request endpoint
+- added import for javax.activation as this was moved in Java 11 to its own module
+
 ## 0.2.6
 
 ### Added
