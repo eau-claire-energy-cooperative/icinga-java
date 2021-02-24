@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.ecec</groupId>
   <artifactId>icinga-api</artifactId>
-  <version>0.2.7</version>
+  <version>0.2.8</version>
   <name>Icinga Java API</name>
   <description>Icinga API for Icinga 2</description>
   

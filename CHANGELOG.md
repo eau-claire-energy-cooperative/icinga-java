@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 
+## 0.2.8
+
+### Added
+
+- attributes ```handled``` and ```problem``` can now be queried and filter on for hosts and services. This is a boolean value to tell if an object has a problem (not ok) and is handled (ack or downtime)
+- added abililty to query Comment objects using /v1/objects/comments request endpoint
+
 ## 0.2.7
 
 ### Added
