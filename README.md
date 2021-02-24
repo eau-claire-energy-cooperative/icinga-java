@@ -28,6 +28,7 @@ The below example initializes the API and does a basic query. The ```IcingaApi``
 * HOST_ENDPOINT - information related to hosts
 * SERVICE_ENDPOINT - information related to services
 * CONTACT_ENDPOINT - information related to Icinga contacts
+* DOWNTIME_ENDPOINT - information related to current downtimes
 
 ```
 
