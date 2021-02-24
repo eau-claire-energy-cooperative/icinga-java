@@ -7,6 +7,7 @@ import java.util.Map;
 import org.json.simple.JSONAware;
 import org.json.simple.JSONObject;
 
+import com.ecec.rweber.icinga.attributes.CommentAttributes;
 import com.ecec.rweber.icinga.attributes.ContactAttributes;
 import com.ecec.rweber.icinga.attributes.DowntimeAttributes;
 import com.ecec.rweber.icinga.attributes.HostAttributes;
@@ -64,8 +65,12 @@ public class ResponseRow implements Serializable, JSONAware {
 		Object result = null;
 		
 		//if the query type matches the attribute type
-		if((m_endpoint.equals(IcingaQuery.SERVICE_ENDPOINT) && a instanceof ServiceAttributes) || (m_endpoint.equals(IcingaQuery.HOST_ENDPOINT) && a instanceof HostAttributes) || (m_endpoint.equals(IcingaQuery.CONTACT_ENDPOINT) && a instanceof ContactAttributes) || (m_endpoint.equals(IcingaQuery.DOWNTIME_ENDPOINT) && a instanceof DowntimeAttributes))
-		{
+		if((m_endpoint.equals(IcingaQuery.SERVICE_ENDPOINT) && a instanceof ServiceAttributes) 
+				|| (m_endpoint.equals(IcingaQuery.HOST_ENDPOINT) && a instanceof HostAttributes) 
+				|| (m_endpoint.equals(IcingaQuery.CONTACT_ENDPOINT) && a instanceof ContactAttributes) 
+				|| (m_endpoint.equals(IcingaQuery.DOWNTIME_ENDPOINT) && a instanceof DowntimeAttributes) 
+				|| (m_endpoint.equals(IcingaQuery.COMMENT_ENDPOINT) && a instanceof CommentAttributes)){
+			
 			if(m_data.containsKey(a.getAttribute()))
 			{
 				result = m_data.get(a.getAttribute());

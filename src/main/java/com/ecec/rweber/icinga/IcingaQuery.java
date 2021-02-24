@@ -15,6 +15,7 @@ public class IcingaQuery {
 	public static final String HOST_ENDPOINT = "v1/objects/hosts";
 	public static final String SERVICE_ENDPOINT = "v1/objects/services";
 	public static final String DOWNTIME_ENDPOINT = "v1/objects/downtimes";
+	public static final String COMMENT_ENDPOINT = "v1/objects/comments";
 	
 	private String m_endpoint = null;
 	private ColumnList m_attrs = null;
