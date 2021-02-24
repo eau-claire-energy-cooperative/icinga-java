@@ -11,6 +11,10 @@ public class ComparisonFilter extends IcingaFilter{
 		init(host,operator,value + "");
 	}
 	
+	public ComparisonFilter(IcingaAttribute host, FilterOperator operator, boolean value) {
+		init(host,operator,value + "");
+	}
+	
 	public ComparisonFilter(IcingaAttribute host, FilterOperator operator, String value) {
 		//wrap strings to help users
 		init(host,operator,"\"" + value + "\"");
