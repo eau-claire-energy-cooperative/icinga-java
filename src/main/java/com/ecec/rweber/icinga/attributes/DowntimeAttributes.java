@@ -10,6 +10,7 @@ public enum DowntimeAttributes implements IcingaAttribute{
 	FIXED("fixed"),
 	SCHEDULED_BY("scheduled_by"),
 	START_TIME("start_time"),
+	TRIGGER_TIME("trigger_time"),
 	WAS_CANCELLED("was_cancelled"),
 	ZONE("zone");
 	
